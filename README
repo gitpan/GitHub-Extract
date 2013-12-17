@@ -4,7 +4,7 @@ NAME
 SYNOPSIS
             my $project = GitHub::Extract->new(
                     username => 'adamkennedy',
-                    project  => 'test-class',
+                    project  => 'PPI',
             );
             
         $project->extract( to => '/my/directory' );
@@ -27,14 +27,14 @@ METHODS
   new
             my $branch = GitHub::Extract->new(
                     username   => 'adamkennedy',
-                    repository => 'test-class',
+                    repository => 'PPI',
 
                     # Fetch a branch other than master
                     branch     => 'mybranch',
 
                     # A custom HTTP client can be provided to any constructor
                     http       => HTTP::Tiny->new(
-                            # Custom HTTP setup
+                            # Custom HTTP setup goes here
                     ),
             );
 
@@ -193,7 +193,7 @@ SEE ALSO
     <http://github.com/>
 
 COPYRIGHT
-    Copyright 2012 Adam Kennedy.
+    Copyright 2012-2013 Adam Kennedy.
 
     This program is free software; you can redistribute it and/or modify it
     under the same terms as Perl itself.
